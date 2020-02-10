@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/medium"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/extra_30"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/extra_30"
+                style="@style/TextRegular"
+                android:text="@string/lbl_verify_detail"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/extra_30"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/extra_30"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/icon_input_number" />
+            <EditText
+                android:id="@+id/etmobilenum"
+                style="@style/LoginEditText"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_mobile_num"
+                android:inputType="phone"
+                android:maxLength="10"
+                />
+        </LinearLayout>
+            <TextView
+                android:id="@+id/tv_sendotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_send_otp"
+                android:layout_marginLeft="@dimen/extra_30"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/extra_30"
+                style="@style/TextHeading"
+                android:gravity="right"
+                />
+        <LinearLayout
+            android:id="@+id/ll_enterotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/extra_30"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/extra_30"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:src="@drawable/icon_input_otp" />
+            <EditText
+                android:id="@+id/etotp"
+                style="@style/LoginEditText"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_otp" />
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_otpview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/extra_30"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/extra_30"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:src="@drawable/icon_password" />
+                    <EditText
+                        android:id="@+id/etPassword"
+                        style="@style/LoginEditText"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_pwd" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/extra_30"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/extra_30"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:src="@drawable/icon_password" />
+                    <EditText
+                        android:id="@+id/etRePassword"
+                        style="@style/LoginEditText"
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/hint_con_pwd" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+                <Button
+                    android:id="@+id/btnverify"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/extra_30"
+                    android:layout_marginTop="@dimen/extra_30"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:layout_marginRight="@dimen/extra_30"
+                    android:background="@drawable/login_button_bg"
+                    style="@style/TextHeading"
+                    android:text="Reset Password"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_20sdp"
+        android:layout_above="@+id/view_line"
+        >
+        <LinearLayout
+            android:id="@+id/top_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                style="@style/TextSmall"
+                android:textColor="@color/colorText"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/colorText"
+                    android:src="@android:drawable/stat_sys_phone_call" />
+
+                <TextView
+                    android:id="@+id/tv_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:gravity="bottom"
+                    android:text="00000 00000"
+                    style="@style/TextSmall"
+                    android:textColor="@color/colorText"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/top_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <TextView
+                android:id="@+id/tv_turnoffservice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="gone"
+                android:text="@string/lbl_courier_turnoffservice"
+                style="@style/TextSmall"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:id="@+id/tv_my_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/lbl_courier_my_profile"
+                style="@style/TextSmall"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:textColor="@color/colorText"/>
+
+
+            <TextView
+                android:id="@+id/tv_my_orders"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:text="@string/drawer_myorder"
+                style="@style/TextSmall"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:id="@+id/tv_pricing"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:text="@string/drawer_pricing"
+                style="@style/TextSmall"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:textColor="@color/colorText"/>
+
+
+            <TextView
+                android:id="@+id/tv_help_support"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_help_support"
+                style="@style/TextSmall"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:textColor="@color/colorText"/>
+
+            <TextView
+                android:id="@+id/tv_about_us"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_about_us"
+                style="@style/TextSmall"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:textColor="@color/colorText"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_above="@+id/llLogout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorText"
+        android:layout_marginRight="@dimen/_25sdp"
+        />
+        <LinearLayout
+            android:id="@+id/llLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_20sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_logout"
+                android:tint="@color/colorText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:gravity="bottom"
+                android:text="@string/drawer_logout"
+                style="@style/TextSmall"
+                android:textColor="@color/colorText"/>
+        </LinearLayout>
+
+
+</RelativeLayout>

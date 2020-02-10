@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.support.Pricing">
+    <include layout="@layout/simple_toolbar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/iv_title"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/app_icon"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:siRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pricing for all weight ranges"
+                style="@style/TextHeading"
+                android:textSize="@dimen/_14ssp"
+                />
+            <TextView
+                android:id="@+id/tv_basicfare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12ssp"
+                android:text="Basic fare : Rs.55"
+                style="@style/TextRegular"
+                />
+
+            <TextView
+                android:id="@+id/tv_distancefee"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12ssp"
+                android:text="Distance fee* : Rs.1 per KM"
+                style="@style/TextRegular"
+                />
+
+            <TextView
+                android:id="@+id/tv_minimumfee"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_12ssp"
+                android:layout_height="wrap_content"
+                android:text="*- minimum applicable distance fee is Rs.15."
+                style="@style/TextRegular" />
+
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_width="@dimen/_200sdp"
+                android:textSize="@dimen/_12ssp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:text="Note: The charges are liable to change at any  time without any
+prior notice to the user."
+                style="@style/TextRegular" />
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+</layout>

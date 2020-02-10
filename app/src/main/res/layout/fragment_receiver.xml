@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        tools:context=".ui.home.HomeFragment"
+        android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/medium"
+                    android:layout_marginRight="@dimen/medium"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:layout_marginTop="@dimen/small"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:src="@drawable/icon_receiver"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/medium"
+                            android:text="@string/lbl_receiver_detail"
+                            style="@style/TextHeading"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etrecievername"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_enter_receiver_name"
+                            style="@style/LoginEditText"/>
+
+                        <EditText
+                            android:id="@+id/etrecievermobile"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_enter_receiver_mobile"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            style="@style/LoginEditText"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_dropaddress"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:maxLines="2"
+                            android:minLines="2"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/lbl_drop_address"
+                            style="@style/LoginEditText"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_action"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/small"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icon_checkbox_completed"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/dotted_line"
+                            android:layerType="software" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icon_checkbox_filled"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/dotted_line"
+                            android:layerType="software" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icon_uncheckbox"/>
+
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:id="@+id/bt_receivnext"
+                            android:layout_height="@dimen/_40sdp"
+                            style="@style/LoginButton"
+                            android:textColor="@color/white"
+                            android:text="NEXT"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+</layout>

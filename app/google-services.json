@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "621312826392",
+    "firebase_url": "https://courier-track-5553e.firebaseio.com",
+    "project_id": "courier-track-5553e",
+    "storage_bucket": "courier-track-5553e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621312826392:android:891f042043679252",
+        "android_client_info": {
+          "package_name": "com.couriertrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621312826392-7d92nkv9tot84drlu2f3rknscr18ls86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.couriertrack",
+            "certificate_hash": "f5bfeabf0b0a4b0d456fcf8092dbb456ba0852ce"
+          }
+        },
+        {
+          "client_id": "621312826392-4f630jp8fpjkqqtoqaa5qkt3o5aua9ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDnrkK91t6e9L_EW26Exjy8Jd8xreZDYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621312826392-4f630jp8fpjkqqtoqaa5qkt3o5aua9ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

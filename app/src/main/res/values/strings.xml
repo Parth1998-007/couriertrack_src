@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Passonn</string>
+    <string name="hint_phone">Enter Phone</string>
+    <string name="hint_pass">Password</string>
+    <string name="hint_login">Login</string>
+    <string name="lbl_register">Register</string>
+    <string name="msg_try_again">Please Try Again</string>
+
+    <!-- Home -->
+    <string name="drawer_profile">Profile</string>
+    <string name="hint_search_product">Type To Search Product</string>
+    <string name="lbl_subscription">Subscription</string>
+    <string name="lbl_categories">Categories</string>
+    <string name="lbl_home">Home</string>
+    <string name="lbl_explore">Explore</string>
+    <string name="lbl_order_subscription_now">Order Subscription Now!</string>
+    <string name="hint_courier">Courier</string>
+    <string name="hint_customer">Customer</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="forgot_pass">Forgot Password?</string>
+    <string name="no_account">New User ?</string>
+    <string name="signup_customer">Signup As Customer</string>
+    <string name="signup_delivery">Signup As Delivery Partner</string>
+    <string name="hint_pass_again">Enter your password again</string>
+    <string name="no_pickup_request">There are no any pick up requests.\n Please come back after some time. \n Thank you.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Will Be Added Soon</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_email">Email Address</string>
+    <string name="lbl_reg_detail">Enter your basic details</string>
+    <string name="lbl_verify_detail">Verify Your Mobile Number</string>
+    <string name="lbl_verify_receiver_detail">Verify Receiver</string>
+    <string name="lbl_verify_sender_detail">Verify Sender</string>
+    <string name="hint_mobile_num">Mobile Number</string>
+    <string name="hint_otp">Enter OTP Received</string>
+    <string name="hint_sender_otp">Enter Sender OTP</string>
+    <string name="hint_receiver_otp">Enter Receiver OTP</string>
+    <string name="hint_recieved_otp">Enter Received OTP</string>
+    <string name="lbl_send_otp"><u>Send OTP</u></string>
+    <string name="lbl_resend_otp"><u>Resend OTP</u></string>
+    <string name="lbl_verify_id">Verify Your Identity</string>
+    <string name="hint_id_number">Enter ID Number</string>
+    <string name="lbl_sender_detail">Sender Details</string>
+    <string name="lbl_fill_details">Please Fill All Details</string>
+    <string name="lbl_enter_your_name">Enter Your Name</string>
+    <string name="lbl_enter_your_mobile">Enter Mobile Number</string>
+    <string name="lbl_enter_valid_mobile">Enter Valid Mobile Number</string>
+    <string name="lbl_pick_address">Pickup Address</string>
+    <string name="lbl_pick_addressenter">Enter Pickup Address</string>
+    <string name="lbl_receiver_detail">Receiver Details</string>
+    <string name="lbl_enter_receiver_name">Enter Receiver Name</string>
+    <string name="lbl_enter_receiver_mobile">Enter Mobile Number</string>
+    <string name="lbl_drop_address">Drop Address</string>
+    <string name="lbl_drop_addressenter">Enter Drop Address</string>
+    <string name="lbl_pkg_detail">Package Details</string>
+    <string name="lbl_enter_pkg_weight">Enter Weight (KG)</string>
+    <string name="lbl_enter_pkg_type">Type of Package</string>
+    <string name="lbl_detail_pkg">More Details About Package</string>
+    <string name="lbl_confirm_order">Confirm Order</string>
+    <string name="lbl_estimated_distance">Estimated Distance</string>
+    <string name="lbl_estimated_time">Estimated Time</string>
+    <string name="lbl_estimated_cost">Estimated Cost</string>
+    <string name="lbl_paid_cost">Amount Paid</string>
+    <string name="lbl_confirm_button_text">Proceed To Payment</string>
+    <string name="lbl_btn_edit_id">Click To Edit ID &amp; Documents</string>
+    <string name="lbl_btn_account">Click To Update Bank Account Details</string>
+    <string name="lbl_update_profile">Update Profile</string>
+    <string name="lbl_success">Success</string>
+    <string name="lbl_orderid">Order ID</string>
+    <string name="lbl_btn_okayaftersuccess">Go To My Orders</string>
+    <string name="lbl_help_support">Help &amp; Support</string>
+    <string name="lbl_courier_my_profile">My Profile</string>
+    <string name="lbl_courier_turnoffservice">Turn Off Tracking</string>
+    <string name="lbl_success_order">Your order successfully placed, you will \n be notify when our riders accept order.</string>
+    <string name="lbl_thnx_reg">Thanks For Registration!</string>
+    <string name="lbl_view_detail">View Details</string>
+    <string name="lbl_accept_pickup">Accept Pickup</string>
+    <string name="hint_reg_success">You will be notified when we \n Complete your verification and you \n can post your request till then.</string>
+    <string name="drawer_myorder">My Orders</string>
+    <string name="drawer_myearning">My Earning</string>
+    <string name="drawer_myaddress">My Address</string>
+    <string name="drawer_help">Help &amp; Support</string>
+    <string name="drawer_logout">Logout</string>
+    <string name="hint_balance_withdraw">To withdraw your earnings, update your bank details in \"MY PROFILE\" section.</string>
+
+    <string name="mapApi">AIzaSyDyPjyOnuUSrJhHMbc7giXufY-vV_8Hfko</string>
+
+    <!--Profile lbl-->
+    <string name="lbl_hint_user_name">User Name</string>
+    <string name="hint_pwd">Enter New Password</string>
+    <string name="hint_con_pwd">Re-Enter Password</string>
+    <string name="drawer_pricing">Pricing</string>
+    <string name="lbl_about_us">About Us</string>
+    <string name="lbl_carrier">Carrier</string>
+    <string name="lbl_termsofuse">I agree to <a href='https://www.passonn.com/terms-conditions'> Terms&amp;Conditions </a> and <a href='https://www.passonn.com/privacy-policy'> Privacy Policy </a> </string>
+    <string name="privacy_policy">https://www.passonn.com/privacy-policy</string>
+    <string name="terms_condition">https://www.passonn.com/terms-conditions</string>
+    <string name="about_us">https://www.passonn.com/about-us</string>
+    <string name="help_support">https://www.passonn.com/help-support</string>
+    <string name="razor_pay">rzp_test_A79jymYJR2v1cW</string>
+    <string name="pricing">https://www.passonn.com/pricing</string>
+    <string name="website">http://passonn.com</string>
+    <string name="title_activity_webview">Webview</string>
+    <string name="please_wait">Please wait</string>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_action"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/icon_checkbox_completed"/>
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/dotted_line"
+                android:layerType="software" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/icon_checkbox_completed"/>
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/dotted_line"
+                android:layerType="software" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/icon_checkbox_filled"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_action"
+            android:layout_margin="@dimen/medium"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/extra_30"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/extra_30"
+                android:text="@string/lbl_verify_id" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginLeft="@dimen/extra_30"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/extra_30"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/iv_forntpic"
+                        android:src="@drawable/icon_default_frontid" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Front Pic"
+                        style="@style/TextSmall"
+                        android:textColor="@color/colorText"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:id="@+id/iv_backpic"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/icon_default_backid"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back Pic"
+                        style="@style/TextSmall"
+                        android:textColor="@color/colorText"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/extra_30"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/extra_30"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinidtype"
+                style="@style/SpinnerTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:drawSelectorOnTop="true"
+                android:dropDownWidth="wrap_content" />
+        </LinearLayout>
+<!--
+            <EditText
+                android:id="@+id/etmobilenum"
+                style="@style/LoginEditText"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/extra_30"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/extra_30"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/hint_mobile_num" />
+-->
+
+            <EditText
+                android:id="@+id/etidnumber"
+                style="@style/LoginEditText"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/extra_30"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/extra_30"
+                android:background="@drawable/bg_edittext"
+                android:hint="@string/hint_id_number" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <Button
+                    android:id="@+id/btnverifyid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/extra_30"
+                    android:layout_marginTop="@dimen/extra_30"
+                    android:layout_marginRight="@dimen/extra_30"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:background="@drawable/login_button_bg"
+                    style="@style/TextHeading"
+                    android:text="SUBMIT ID"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

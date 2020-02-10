@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:orientation="vertical"
+        tools:context=".ui.myorder.OrderDetail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/medium"
+            android:layout_marginTop="@dimen/small"
+            android:layout_marginRight="@dimen/medium"
+            android:layout_marginBottom="@dimen/medium"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_driver_ptofile"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:src="@drawable/icon_driver" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        style="@style/TextHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Courier Boy Detail" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        style="@style/TextHeadingLight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeadingLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="right"
+                android:text="@string/lbl_estimated_distance" />
+
+            <TextView
+                android:id="@+id/tvdistance"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium"
+                android:layout_weight="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeadingLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="right"
+                android:text="@string/lbl_estimated_time" />
+
+            <TextView
+                android:id="@+id/tvtime"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium"
+                android:layout_weight="6" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextHeadingLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="right"
+                android:text="@string/lbl_paid_cost" />
+
+            <TextView
+                android:id="@+id/tvCost"
+                style="@style/TextHeading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/medium"
+                android:layout_weight="6" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

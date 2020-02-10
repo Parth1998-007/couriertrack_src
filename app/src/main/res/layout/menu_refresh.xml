@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/actionButtonStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/imgrefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_gravity="center"
+            android:tint="@color/colorTextWhite"
+            android:src="@drawable/icon_refresh" />
+   <!-- <TextView
+        android:id="@+id/tvaction"
+        android:layout_width="@dimen/_80sdp"
+        style="@style/TextHeading"
+        android:background="@drawable/bg_border_white"
+        android:textColor="@color/white"
+        android:padding="@dimen/_6sdp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />-->
+</FrameLayout>

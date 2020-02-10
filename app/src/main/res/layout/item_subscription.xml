@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/imgOffer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_10sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/imgSubscription"
+        android:layout_width="@dimen/_80sdp"
+        android:scaleType="centerCrop"
+        app:siRadius="@dimen/_10sdp"
+        android:layout_height="@dimen/_80sdp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text=" @ 95 Per Ltr"
+            style="@style/TextHeading"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTextLight"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/lbl_order_subscription_now"
+            style="@style/TextHeading"
+            android:layout_gravity="bottom"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+</LinearLayout>

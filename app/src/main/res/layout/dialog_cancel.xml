@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lldateselection"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/_24sdp"
+    android:layout_marginRight="@dimen/_24sdp"
+    android:padding="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/iv_title"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/app_icon"
+        app:siRadius="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_title"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="Are you sure you want to cancel this order?"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etreason"
+        style="@style/LoginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/bg_commentbox"
+        android:maxLines="5"
+        android:gravity="left|top"
+        android:inputType="text|textMultiLine"
+        android:imeOptions="actionDone"
+        android:hint="Enter reason for cancellation"
+        android:minLines="3" />
+
+    <TextView
+        android:id="@+id/msg_con"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancellation charges and refunds will be as
+mentioned in “xix. Cancellation and Refund policy” of
+Terms and Conditions. "
+        android:textColor="#848484"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/tv_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:textColor="@color/colorAccent"
+        android:text=" Terms&amp;Conditions"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btYes"
+            style="@style/OrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Yes"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_font"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <Button
+            android:id="@+id/btno"
+            style="@style/OrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="No"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_font"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

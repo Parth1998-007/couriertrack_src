@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_action"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/icon_checkbox_completed"/>
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/dotted_line"
+                android:layerType="software" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/icon_checkbox_completed"/>
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/dotted_line"
+                android:layerType="software" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/icon_checkbox_completed"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_action"
+            android:layout_margin="@dimen/medium"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextHeadingMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/extra_30"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/extra_30"
+                android:text="@string/lbl_thnx_reg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:gravity="center"
+                android:background="@drawable/bg_edittext"
+                android:layout_marginLeft="@dimen/extra_30"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/extra_30">
+
+                <TextView
+                    android:id="@+id/etmobilenum"
+                    style="@style/TextHeadingLight"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorText"
+                    android:hint="@string/hint_reg_success" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <Button
+                    android:id="@+id/btngohome"
+                    style="@style/TextHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/extra_30"
+                    android:layout_marginTop="@dimen/extra_30"
+                    android:layout_marginRight="@dimen/extra_30"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:background="@drawable/login_button_bg"
+                    android:text="GO TO HOME"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

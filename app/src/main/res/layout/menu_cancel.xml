@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/actionButtonStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/tvaction"
+        android:layout_width="wrap_content"
+        style="@style/TextHeading"
+        android:background="@drawable/bg_border_white"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:paddingLeft="@dimen/_6sdp"
+        android:paddingRight="@dimen/_6sdp"
+        android:gravity="center"
+        android:text="Cancel Order"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+</FrameLayout>

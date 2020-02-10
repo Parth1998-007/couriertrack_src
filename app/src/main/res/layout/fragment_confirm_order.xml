@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        tools:context=".ui.home.HomeFragment"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/medium"
+                    android:layout_marginRight="@dimen/medium"
+                    android:layout_marginBottom="@dimen/medium"
+                    android:layout_marginTop="@dimen/small"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:src="@drawable/icon_confirm"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/medium"
+                            android:text="@string/lbl_confirm_order"
+                            style="@style/TextHeading"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/ll_action"
+                        android:layout_below="@+id/ll_title"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/lbl_estimated_distance"
+                            style="@style/TextHeadingLight"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="@dimen/medium"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvdistance"
+                            style="@style/TextHeading"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/lbl_estimated_time"
+                            style="@style/TextHeadingLight"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="@dimen/medium"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tvtime"
+                            style="@style/TextHeading"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/medium"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="4"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="@string/lbl_estimated_cost"
+                            style="@style/TextHeadingLight"/>
+
+                        <TextView
+                            android:id="@+id/tv_cost"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="@dimen/medium"
+                            android:layout_weight="6"
+                            android:layout_height="wrap_content"
+                            android:text="250 Rs"
+                            style="@style/TextHeading"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_action"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small"
+                        android:layout_marginBottom="@dimen/large"
+                        android:gravity="center"
+                        android:layout_above="@+id/bt_confirmorder"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icon_checkbox_completed" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layerType="software"
+                            android:src="@drawable/dotted_line" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icon_checkbox_completed" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layerType="software"
+                            android:src="@drawable/dotted_line" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:src="@drawable/icon_checkbox_completed" />
+
+                    </LinearLayout>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:id="@+id/bt_confirmorder"
+                            android:layout_height="@dimen/_40sdp"
+                            style="@style/LoginButton"
+                            android:textColor="@color/white"
+                            android:layout_alignParentBottom="true"
+                            android:text="@string/lbl_confirm_button_text"/>
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group>
+        <item
+            android:id="@+id/nav_view_myorder"
+            android:title="@string/drawer_myorder" />
+
+
+        <item
+            android:id="@+id/nav_view_help"
+            android:title="@string/drawer_help" />
+
+        </group>
+
+        <item
+            android:id="@+id/nav_view_logout"
+            android:title="@string/drawer_logout" />
+
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small">5dp</dimen>
+    <dimen name="medium">10dp</dimen>
+    <dimen name="large">15dp</dimen>
+    <dimen name="extra">20dp</dimen>
+    <dimen name="extra_30">30dp</dimen>
+
+    <dimen name="text_small">11sp</dimen>
+    <dimen name="text_medium">13sp</dimen>
+    <dimen name="text_large">15sp</dimen>
+    <dimen name="text_heading">17sp</dimen>
+    <dimen name="text_toolbar">19sp</dimen>
+
+
+    <!-- login -->
+    <dimen name="loginPadding">30dp</dimen>
+
+    <!-- home -->
+    <dimen name="card_profile_height">180dp</dimen>
+
+    <dimen name="login_edittext_width">280dp</dimen>
+    <dimen name="dialog_button_width">280dp</dimen>
+    <dimen name="login_button_height">35dp</dimen>
+    <dimen name="edittext_height">35dp</dimen>
+    <dimen name="dialog_header_height">45dp</dimen>
+
+    <dimen name="dash_height">2dp</dimen>
+    <dimen name="uploade_image_size">80dp</dimen>
+
+    <dimen name="up_down_arrow_size">20dp</dimen>
+
+    <dimen name="icon_small">25dp</dimen>
+    <dimen name="icon_small_drawable">15dp</dimen>
+
+    <dimen name="tab_icon_size">18dp</dimen>
+
+    <dimen name="divider_height">0.1dp</dimen>
+    
+    <dimen name="list_image_size">40dp</dimen>
+    <dimen name="sub_list_image_size">35dp</dimen>
+
+    <dimen name="card_elevation">4dp</dimen>
+
+    <dimen name="tab_height">45dp</dimen>
+    <dimen name="tab_height_small">35dp</dimen>
+
+    <dimen name="small_button_width">100dp</dimen>
+    <dimen name="small_button_height">25dp</dimen>
+
+    <dimen name="card_width">310dp</dimen>
+    <dimen name="card_height">420dp</dimen>
+
+    <dimen name="fitness_check_image_size">100dp</dimen>
+</resources>

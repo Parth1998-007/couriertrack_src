@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lldateselection"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/_24sdp"
+    android:layout_marginRight="@dimen/_24sdp"
+    android:padding="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.github.siyamed.shapeimageview.RoundedImageView
+        android:id="@+id/iv_title"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/app_icon"
+        app:siRadius="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_title"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Order ID"
+            android:layout_marginRight="@dimen/_5sdp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lbl_title_value"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="120121"
+            style="@style/TextHeading"
+            android:layout_marginLeft="@dimen/_5sdp"
+            />
+
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Msg"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textAllCaps="true"
+         />
+
+    <LinearLayout
+        android:id="@+id/ll_otpview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/extra_30"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/extra_30"
+            style="@style/TextRegular"
+            android:visibility="gone"
+            android:text="@string/lbl_verify_receiver_detail"/>
+
+        <TextView
+            android:id="@+id/tv_sendotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_resend_otp"
+            android:layout_marginLeft="@dimen/extra_30"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/extra_30"
+            style="@style/TextHeadingLight"
+            android:gravity="right"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/extra_30"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/extra_30"
+            android:background="@drawable/bg_edittext"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:src="@drawable/icon_input_otp" />
+
+            <EditText
+                android:id="@+id/etotp"
+                style="@style/LoginEditText"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_otp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btPauseOrderCancel"
+            style="@style/OrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_font"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <Button
+            android:id="@+id/btPauseOrderOkay"
+            style="@style/OrderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="LOGOUT"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/regular_font"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+    </LinearLayout>
+</LinearLayout>
